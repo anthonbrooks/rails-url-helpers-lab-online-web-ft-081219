@@ -1,0 +1,1 @@
+class AddActiveComlumnToStudents < ActiveRecord
