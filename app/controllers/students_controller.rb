@@ -11,6 +11,13 @@ class StudentsController < ApplicationController
 
   private
 
+    def active
+      set_student
+      @student.active = !@student.active
+      @student.save
+      
+    end
+    
     def set_student
       @student = Student.find(params[:id])
     end
