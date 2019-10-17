@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   
   private
 
-   def activate
+  def activate
     set_student
     @student.active = !@student.active
     @student.save
